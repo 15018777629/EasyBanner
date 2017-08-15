@@ -10,6 +10,7 @@
 ```java
 EasyBanner easyBanner = (EasyBanner) findViewById(R.id.easyBanner);
 DotIndicator dotIndicator = (DotIndicator) findViewById(R.id.dotIndicator);
+// 三个参数分别为：数据集合，是否无限轮播，上下文
 easyBanner.setBanner(dotIndicator, new DefaultBannerAdapter(List<T> , true,context) {
       @Override
       public void loadImage(ImageView imageView, String url) {
@@ -62,5 +63,25 @@ app:dot_color="#AA000000"                        // dot的颜色  dot_type为d
 app:dot_select_color="#fff"                      // 选择（当前）dot的颜色  dot_type为default_dot时生效
 app:dot_image="@drawable/line"                   // dot的图片资源  dot_type为custom_dot时生效
 app:dot_select_image="@drawable/line_select"     // 选择（当前）dot的图片资源  dot_type为custom_dot时生效
+```
+当然，有懒人模式只加载图片，当然也有自定义才能满足你们的要求，其实也是很简单，只需要实现展示的逻辑即可，参考如下
+```java
+easyBanner.setBanner(dotIndicator, new BaseBannerAdapter(Arrays.asList(IMAGES) , true) {
+    @Override
+    public View instantiateItem(ViewGroup container, Object o) {
+        String url = (String) o;
+        View v = View.inflate(BannerActivity.this, R.layout.layout_banner, null);
+        ImageView ivPic = (ImageView) v.findViewById(R.id.ivPic);
+        TextView tvUrl = (TextView) v.findViewById(R.id.tvUrl);
+
+        Picasso.with(BannerActivity.this)
+               .load(url)
+               .skipMemoryCache()
+               .into(ivPic);
+        tvUrl.setText(url);
+        container.addView(v);
+        return v;
+    }
+});
 ```
 
