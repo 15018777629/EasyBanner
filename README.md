@@ -51,16 +51,16 @@ easyBanner.setBanner(dotIndicator, new DefaultBannerAdapter(List<T> , true,conte
 稍微解释一下这些属性的使用   
 ```java
 // EasyBanner的属性
-app:auto_play="true"     // 是否自动轮播
-app:interval="3000"      // 自动轮播时间间隔
+app:auto_play="true"                             // 是否自动轮播
+app:interval="3000"                              // 自动轮播时间间隔
 
 // DotIndicator的属性
-app:dot_type="custom_dot"     // 指示器类型custom_dot对应的是自定义图片，default_dot对应的是默认的圆点
-app:dot_size="20dp"     // 每个dot的大小
-app:dot_space="7dp"     // 每个dot之间的间隔大小
-app:dot_color="#AA000000"     // dot的颜色  dot_type为default_dot时生效
-app:dot_select_color="#fff"   // 选择（当前）dot的颜色  dot_type为default_dot时生效
-app:dot_image="@drawable/line"     // dot的图片资源  dot_type为custom_dot时生效
+app:dot_type="custom_dot"                        // 指示器类型custom_dot对应的是自定义图片，default_dot对应的是默认的圆点
+app:dot_size="20dp"                              // 每个dot的大小
+app:dot_space="7dp"                              // 每个dot之间的间隔大小
+app:dot_color="#AA000000"                        // dot的颜色  dot_type为default_dot时生效
+app:dot_select_color="#fff"                      // 选择（当前）dot的颜色  dot_type为default_dot时生效
+app:dot_image="@drawable/line"                   // dot的图片资源  dot_type为custom_dot时生效
 app:dot_select_image="@drawable/line_select"     // 选择（当前）dot的图片资源  dot_type为custom_dot时生效
 ```
 
