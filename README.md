@@ -48,9 +48,9 @@ easyBanner.setBanner(dotIndicator, new DefaultBannerAdapter(List<T> , true,conte
         app:dot_select_color="#fff"
         />
 </RelativeLayout>
-![Screenshot](https://github.com/15018777629/EasyBanner/blob/master/screenshot/Screenshot_20170815-144423.png)
 ```
-稍微解释一下这些属性的使用   
+![Screenshot](https://github.com/15018777629/EasyBanner/blob/master/screenshot/Screenshot_20170815-144423.png)
+## 稍微解释一下这些属性的使用   
 ```java
 // EasyBanner的属性
 app:auto_play="true"                             // 是否自动轮播
@@ -86,7 +86,7 @@ easyBanner.setBanner(dotIndicator, new BaseBannerAdapter(Arrays.asList(IMAGES) ,
 });
 ```
 ![Screenshot](https://github.com/15018777629/EasyBanner/blob/master/screenshot/Screenshot_20170815-141458.png)
-没错，就是这么简单，再也不用写冗余的代码了。哦，忘了和你们说了，如果auto_play 属性设为了true，建议进行如下操作
+## 没错，就是这么简单，再也不用写冗余的代码了。哦，忘了和你们说了，如果auto_play 属性设为了true，建议进行如下操作
 ```java
     @Override
     protected void onResume() {
