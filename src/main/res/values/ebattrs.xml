@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EasyBanner">
+        <attr name="auto_play" format="boolean"/>
+        <attr name="interval" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="DotIndicator">
+        <attr name="dot_type">
+            <enum name="default_dot" value="0"/>
+            <enum name="custom_dot" value="1"/>
+        </attr>
+        <attr name="dot_color" format="color"/>
+        <attr name="dot_select_color" format="color"/>
+        
+        <attr name="dot_image" format="reference"/>
+        <attr name="dot_select_image" format="reference"/>
+
+        <attr name="dot_space" format="dimension"/>
+        <attr name="dot_size" format="dimension"/>
+    </declare-styleable>
+</resources>
