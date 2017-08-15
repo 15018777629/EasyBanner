@@ -44,8 +44,8 @@ easyBanner.setBanner(dotIndicator, new DefaultBannerAdapter(List<T> , true,conte
         app:dot_type="custom_dot"
         app:dot_size="20dp"
         app:dot_space="7dp"
-        app:dot_color="#AA000000"
-        app:dot_select_color="#fff"
+        app:dot_image="@drawable/line"
+        app:dot_select_image="@drawable/line_select"
         />
 </RelativeLayout>
 ```
