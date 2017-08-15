@@ -84,4 +84,4 @@ easyBanner.setBanner(dotIndicator, new BaseBannerAdapter(Arrays.asList(IMAGES) ,
     }
 });
 ```
-
+没错，就是这么简单，再也不用写冗余的代码了。
