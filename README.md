@@ -27,7 +27,7 @@ easyBanner.setBanner(dotIndicator, new DefaultBannerAdapter(List<T> , true,conte
       }
  });
 ```
-这样，就可以展示你的轮播图啦，这是一个最简单的轮播图，只有一张图片和指示器，当然还有xml布局如下   
+这样，就可以展示你的轮播图啦，这是一个最简单的轮播图，只有一张图片和指示器，xml布局如下   
 ```java
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
