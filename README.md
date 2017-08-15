@@ -1,5 +1,5 @@
 # EasyBanner 超简单的轮播图
-使用超简单，十行代码就可以搞定   
+使用超简单，十几行代码就可以搞定   
 支持自定义指示器，使用方便   
 支持自动轮播   
 支持无限轮播   
@@ -11,7 +11,7 @@
 EasyBanner easyBanner = (EasyBanner) findViewById(R.id.easyBanner);
 DotIndicator dotIndicator = (DotIndicator) findViewById(R.id.dotIndicator);
 
-// 设置监听，最好在setBanner之前调用
+// 如果需要监听pageChanged，可以设置监听，最好在setBanner之前调用
 easyBanner.setPagerChangedListener(new EasyBanner.PagerChangedListener() {
             @Override
             public void onPageSelected(int position, Object o) {
@@ -27,7 +27,7 @@ easyBanner.setBanner(dotIndicator, new DefaultBannerAdapter(List<T> , true,conte
       }
  });
 ```
-甚至不用十行代码，就可以展示你的轮播图啦，这是一个最简单的轮播图，只有一张图片和指示器，当然还有xml布局如下   
+这样，就可以展示你的轮播图啦，这是一个最简单的轮播图，只有一张图片和指示器，当然还有xml布局如下   
 ```java
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
