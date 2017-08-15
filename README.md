@@ -84,8 +84,9 @@ easyBanner.setBanner(dotIndicator, new BaseBannerAdapter(Arrays.asList(IMAGES) ,
     }
 });
 ```
-没错，就是这么简单，再也不用写冗余的代码了。哦，忘了和你们说了，如果auto_play 属性设为了true，建议进行如下操作@Override
+没错，就是这么简单，再也不用写冗余的代码了。哦，忘了和你们说了，如果auto_play 属性设为了true，建议进行如下操作
 ```java
+    @Override
     protected void onResume() {
         super.onResume();
         easyBanner.onResume();
