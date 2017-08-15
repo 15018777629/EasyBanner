@@ -10,6 +10,15 @@
 ```java
 EasyBanner easyBanner = (EasyBanner) findViewById(R.id.easyBanner);
 DotIndicator dotIndicator = (DotIndicator) findViewById(R.id.dotIndicator);
+
+// 设置监听，最好在setBanner之前调用
+easyBanner.setPagerChangedListener(new EasyBanner.PagerChangedListener() {
+            @Override
+            public void onPageSelected(int position, Object o) {
+                
+            }
+        });
+        
 // 三个参数分别为：数据集合，是否无限轮播，上下文
 easyBanner.setBanner(dotIndicator, new DefaultBannerAdapter(List<T> , true,context) {
       @Override
